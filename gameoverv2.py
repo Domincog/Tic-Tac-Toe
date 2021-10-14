@@ -87,6 +87,14 @@ def gameover(board):
     else:
         return False
     
-gameovertest = ['o', 'o', 'o', 3 , 'x', 'o', 'o', 'o', 'x']
-gameovertest2 = ['o', 'o', 'o', 4, 'x', 'x', 7, 8, 'x']
-print(gameover(gameovertest2))
+#Checks to see if a piece was already played
+def isplayed(y, check):
+    if y[check] == 'o' or y[check] == 'x':
+        return True
+    else:
+        return False
+# gameovertest = ['o', 'o', 'o', 3 , 'x', 'o', 'o', 'o', 'x']
+# gameovertest2 = ['o', 'o', 'o', 4, 'x', 'x', 7, 8, 'x']
+# print(gameover(gameovertest2))
+
+
