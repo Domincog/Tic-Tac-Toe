@@ -48,7 +48,7 @@ def boardx(player):
         board2 = board2.format(y[0],y[1],y[2],y[3],y[4],y[5],y[6],y[7],y[8])
         print(board2)
         placeholdstatement = True
-    loc = int(input("please type the number you want")) - 1 
+    loc = int(input("please type the number you want: ")) - 1 
     y[loc] = x
     board2 = board.format(y[0],y[1],y[2],y[3],y[4],y[5],y[6],y[7],y[8])
     print("\n" * 50) #This is a very makeshift way of clearing the screen, needs to be reimplemented later... Only works in terminal, so comment out as needed.
