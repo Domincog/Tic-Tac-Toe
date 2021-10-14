@@ -1,7 +1,11 @@
 # Tic-Tac-Toe
 Simple tic-tac-toe implementation using Python.
 
-Possible future implimentations:
+
+
+
+
+# Possible future implimentations:
 
 V1.1.0
 
