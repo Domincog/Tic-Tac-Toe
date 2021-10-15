@@ -9,7 +9,7 @@ Simple tic-tac-toe implementation using Python.
 
 V1.1.0
 
-[ N ] Prevent users from overiding each-others placements on tic-tac-toe board
+[ Y ] Prevent users from overiding each-others placements on tic-tac-toe board
 
 [ N ] Make the tic-tac-toe game ask if players want to play again
 
