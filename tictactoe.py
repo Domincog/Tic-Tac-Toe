@@ -45,10 +45,12 @@ def boardx(player):
     print("It is " + player + "'s turn!")
     if placeholdstatement == False:
         y = [1,2,3,4,5,6,7,8,9]
-        board2 = board2.format(y[0],y[1],y[2],y[3],y[4],y[5],y[6],y[7],y[8])
+        board2 = board2.format(y[0],y[1],y[2],y[3],y[4],y[5],y[6],y[7],y[8])1
         print(board2)
         placeholdstatement = True
-    loc = int(input("please type your move (number 1-9): ")) - 1 
+    loc = int(input("please type your move (number 1-9): ")) - 1
+    if gameoverv2.isplayed(y, loc) == True:
+        print("You can't write over your opponents moves!")
     y[loc] = x
     board2 = board.format(y[0],y[1],y[2],y[3],y[4],y[5],y[6],y[7],y[8])
     print("\n" * 50) #This is a very makeshift way of clearing the screen, needs to be reimplemented later... Only works in terminal, so comment out as needed.
