@@ -11,9 +11,9 @@ V1.1.0
 
 [ Y ] Prevent users from overiding each-others placements on tic-tac-toe board
 
-[ N ] Make the tic-tac-toe game ask if players want to play again
+[ Y ] Make the tic-tac-toe game ask if players want to play again
 
-[ N ] Make code more legible (better comments / syntax)
+[ P ] Make code more legible (better comments / syntax)
 
 V1.2.0
 
@@ -24,3 +24,5 @@ V1.2.0
 [ Y ] = completed
 
 [ N ] = incomplete
+
+[ P ] = in progress
