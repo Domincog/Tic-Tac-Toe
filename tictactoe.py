@@ -3,7 +3,7 @@ This is my attempt at a tic-tac-toe implementation
 
 Possible future implimentations:
     .State who won at the end of each game (DONE)
-    .Ask if the players want to play again
+    .Ask if the players want to play again (DONE)
     .Ask if player wants to play against computer (impliment tictactoe AI engine)
     .
 '''
@@ -58,34 +58,38 @@ def boardx(player):
     print(board2)
     print(y)
 
-gameover = False
-
-playerturn = True
-while gameover == False:
-
-    if playerturn==True:
-        boardx('x')
-        playerturn=False
-        if gameoverv2.fullboard2(y)==True:
-            print("THE GAME IS OVER \n        DRAW!!!")
-            gameover=True
-        elif gameoverv2.gameover(y)==True:
-            print("THE GAME IS OVER \n        X WINS")
-            gameover = True
-    
-    elif playerturn==False:
-        boardx('o')
-        playerturn=True    
-        if gameoverv2.fullboard2(y)==True:
-            print("THE GAME IS OVER \n        DRAW!!!")
-            gameover=True
-        elif gameoverv2.gameover(y)==True:
-            print("THE GAME IS OVER \n        O WINS")
-            gameover = True
+def playgame():
+    global placeholdstatement
+    gameover = False
+    playerturn = True
+    placeholdstatement = False
+    while gameover == False:
+        if playerturn==True:
+            boardx('x')
+            playerturn=False
+            if gameoverv2.fullboard2(y)==True:
+                print("THE GAME IS OVER \n        DRAW!!!")
+                gameover=True
+            elif gameoverv2.gameover(y)==True:
+                print("THE GAME IS OVER \n        X WINS")
+                gameover = True
+        elif playerturn==False:
+            boardx('o')
+            playerturn=True    
+            if gameoverv2.fullboard2(y)==True:
+                print("THE GAME IS OVER \n        DRAW!!!")
+                gameover=True
+            elif gameoverv2.gameover(y)==True:
+                print("THE GAME IS OVER \n        O WINS")
+                gameover = True
 
 #This is another makeshift bit of code that only makes sense when used in the command line... 
-closeout = True
-while closeout==True:
-    endthescreen = input("press enter to close out: ")
-    closeout=False
+playagain = True
+while playagain==True:
+    playgame()
+    question = input("press enter to exit or type 'yes' to play again: ")
+    if question != 'yes':
+        playagain = False
     
+
+# %%
