@@ -42,13 +42,13 @@ def boardx(player):
     global y
     global board2
     x = str(player)
-    print(" It is " + player + "'s turn!")
+    print("It is " + player + "'s turn!")
     if placeholdstatement == False:
         y = [1,2,3,4,5,6,7,8,9]
         board2 = board2.format(y[0],y[1],y[2],y[3],y[4],y[5],y[6],y[7],y[8])
         print(board2)
         placeholdstatement = True
-    loc = int(input("please type your move (number 1-9): ")) - 1
+    loc = int(input("Choose your number: ")) - 1
     while gameoverv2.isplayed(y, loc) == True:
         print("You can't write over your opponents moves!")
         loc = int(input("Please choose another number: ")) - 1
