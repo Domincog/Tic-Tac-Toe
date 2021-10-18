@@ -46,7 +46,8 @@ def boardx(player):
     if placeholdstatement == False:
         y = [1,2,3,4,5,6,7,8,9]
         board2 = board2.format(y[0],y[1],y[2],y[3],y[4],y[5],y[6],y[7],y[8])
-        print(board2)
+        board3 = board.format(y[0],y[1],y[2],y[3],y[4],y[5],y[6],y[7],y[8])
+        print(board3)
         placeholdstatement = True
     loc = int(input("Choose your number: ")) - 1
     while gameoverv2.isplayed(y, loc) == True:
